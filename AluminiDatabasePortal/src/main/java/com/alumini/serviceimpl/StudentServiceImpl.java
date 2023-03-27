@@ -26,7 +26,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student createStudent(StudentDTO studentDTO) {
-		Student student=Student.builder().name(studentDTO.getName()).email(studentDTO.getEmail()).phone(studentDTO.getPhone()).graduationYear(studentDTO.getGraduationYear()).build();
+		Student student=Student.builder().name(studentDTO.getName()).email(studentDTO.getEmail()).phone(studentDTO.getPhone()).graduationYear(studentDTO.getGraduationYear()).address(studentDTO.getAddress()).build();
 		return studentRepository.save(student);
 	}
 
@@ -40,6 +40,7 @@ public class StudentServiceImpl implements StudentService {
 			_student.setPhone(studentDTO.getPhone());
 			_student.setEmail(studentDTO.getEmail());
 			_student.setGraduationYear(studentDTO.getGraduationYear());
+			_student.setAddress(studentDTO.getAddress());
 			
 			return studentRepository.save(_student);
 		}

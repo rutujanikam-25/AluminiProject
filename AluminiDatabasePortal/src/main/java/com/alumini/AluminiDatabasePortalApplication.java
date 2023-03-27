@@ -20,10 +20,10 @@ public class AluminiDatabasePortalApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Student a1=Student.builder().name("pranjal").phone("9876543234").email("A@gmail.com").graduationYear("2023").build();
-		Student a2=Student.builder().name("pratik").phone("9876543244").email("B@gmail.com").graduationYear("2021").build();
-		Student a3=Student.builder().name("pooja").phone("9876543233").email("C@gmail.com").graduationYear("2022").build();
-		Student a4=Student.builder().name("jayshri").phone("987654322").email("T@gmail.com").graduationYear("2024").build();
+		Student a1=Student.builder().name("pranjal").phone("9876543234").email("A@gmail.com").graduationYear("2023").address("mumbai").build();
+		Student a2=Student.builder().name("pratik").phone("9876543244").email("B@gmail.com").graduationYear("2021").address("pune").build();
+		Student a3=Student.builder().name("pooja").phone("9876543233").email("C@gmail.com").graduationYear("2022").address("nashik").build();
+		Student a4=Student.builder().name("jayshri").phone("987654322").email("T@gmail.com").graduationYear("2024").address("mumbai").build();
 		studentRepository.save(a1);
 		studentRepository.save(a2);
 		studentRepository.save(a3);

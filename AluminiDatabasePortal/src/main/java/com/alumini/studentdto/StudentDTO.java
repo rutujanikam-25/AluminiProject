@@ -31,4 +31,5 @@ public class StudentDTO {
 	 @NotNull(message="Invalid Phone Number=Phone Number is Empty")
 	 @Pattern(regexp="^\\d(10)5",message="Invalid Phone Number........")
 	  private String phone;
+	 private String address;
 }
